@@ -32,10 +32,13 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+    ('twitter', 'https://twitter.com/xm3ron'),
+    ('github', 'https://github.com/xm3ron'),
+    # facebook, flickr
+)
 
-DEFAULT_PAGINATION = 2
+DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -73,8 +76,3 @@ INDEX_SAVE_AS = 'blog_index.html'
 
 DEFAULT_DATE_FORMAT = ('- %d -<br/>%B<br/>%Y')
 
-SOCIAL = (
-    ('twitter', 'https://twitter.com/xm3ron'),
-    ('github', 'https://github.com/xm3ron'),
-    # facebook, flickr
-)
