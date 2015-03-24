@@ -1,21 +1,57 @@
 Title: Servizi
 
-La mia esperienza maturata negli anni mi permette di gestire molteplici
-tipologie di progetti software.
-Di seguito alcuni dei servizi che offro ai miei clienti. Qualora non dovessi
-trovare il servizio tra quelli elencati non esitare a contattarmi.
 
-1. progettazione e realizzazione siti web statici
-2. progettazione e realizzazione siti web dinamici
-3. restyling e ottimizzazione siti web esistenti
-4. software gestionali
-5. posizionamento motori di ricerca
-6. e-commerce
+<div class="sectiontitle">
+    <h4>Cosa offro</h4>
+</div>
 
-1. Sei un professionista o un'azienda e vuoi pubblicizzare la tua attività 
-online? Il sito web statico rappresenta l'evoluzione della ormai obsoleta
-brochure cartacea. Su su sito web statico si cerca di porre l'accento sui
-servizi offerti e su come permettere ad un possibile cliente di mettersi in
-contatto con noi.
-2. Il sito web dinamico consente una evoluzione dei contenuti nel tempo.
-   Consente al cliente di avere una piattaforma che evolve con il crescere 
+L'esperienza maturata negli anni mi permette di gestire molteplici tipologie di progetti software.
+Di seguito alcuni dei servizi che offro ai miei clienti. Qualora non dovessi trovare il servizio tra quelli elencati non esitare a contattarmi.
+
+
+<div class="six columns noleftmargin">
+    <h5 class="sidebartitle">Siti web statici / dinamici</h5>
+	<p>
+        <img alt="" class="pics" src="images/settings.png">
+			    Progettazione e realizzazione di siti web personalizzati a
+			    seconda delle necessità. Siti web per professionisti che
+			    desiderano creare il proprio biglietto da visita online,
+			    portali multimediali, applicazioni internet/intranet.
+	</p>
+</div>
+<div class="six columns noleftmargin">
+    <h5 class="sidebartitle">E-commerce</h5>
+    <p>
+    <img alt="" class="pics" src="images/settings.png">
+    Progettazione e realizzazione di siti web e-commerce per tutti coloro abbiano l'esigenza di aprire una vendita online e cominciare a monetizzare i propri prodotti. Tali siti possono essere progettati utilizzando le più comuni piattaforme open-source.
+    </p>
+</div>
+<div class="six columns noleftmargin">
+    <h5 class="sidebartitle">Software gestionali</h5>
+    <p>
+    <img alt="" class="pics" src="images/settings.png">
+    Progettazione e realizzazione di programmi gestionali per qualsiasi tipologia commerciale. Ad esempio, gestione del magazzino, gestione degli ordini di sale di un ristorante, gestione condomini.
+    </p>
+</div>
+<div class="six columns noleftmargin">
+    <h5 class="sidebartitle">Posizionamento SEO</h5>
+    <p>
+    <img alt="" class="pics" src="images/settings.png">
+    Possibilità di posizionare un sito web, nuovo o già esistente, come primo risultato sui maggiori motori di ricerca (Google, Bing, Yahoo, etc.). Tale attività prevede l'utilizzo di tecniche SEO avanzate.
+    </p>
+</div>
+<div class="six columns noleftmargin">
+    <h5 class="sidebartitle">Software redazionale</h5>
+    <p>
+    <img alt="" class="pics" src="images/settings.png">
+    Portali per la pubblicazione di contenuti testuali utilizzando le più comuni piattaforme di blog / cms (wordpress, joomla).
+    </p>
+</div>
+<div class="six columns noleftmargin">
+    <h5 class="sidebartitle">Gestione campagne SEM / Invio DEM</h5>
+    <p>
+    <img alt="" class="pics" src="images/settings.png">
+Creazione di campagne pubblicitarie mediante tecniche SEM, gestite con AdWords, o DEM (Direct Email Marketing), che incrementino il traffico verso il proprio sito.
+    </p>
+</div>
+<div class="clear"></div>
