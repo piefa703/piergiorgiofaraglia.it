@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import hashlib
 import os
 
 #########
@@ -44,11 +45,14 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 # Menu
-#DISPLAY_PAGES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (
     ('Chi sono', '/pages/chi-sono.html'),
+    ('Servizi', '/pages/servizi.html'),
+    ('Portfolio', '/pages/portfolio.html'),
     ('Blog', '/blog_index.html'),
+    ('Contatti', '/pages/contatti.html'),
 )
 
 # Page
