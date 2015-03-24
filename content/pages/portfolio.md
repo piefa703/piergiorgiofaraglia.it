@@ -28,7 +28,7 @@ Template: full_page
 				</div>
 			</div>
 			<!-- image here -->
-			<img alt="" src="/theme/images/temp/folio1.jpg">
+			<img alt="Immagine homepage ludovicopratesi.it" src="/images/portfolio/ludovico-pratesi.png">
 		</div>
 	</div>
 
@@ -43,7 +43,7 @@ Template: full_page
 				</div>
 			</div>
 			<!-- image here -->
-			<img alt="" src="/theme/images/temp/folio1.jpg">
+			<img alt="Immagine homepage pascucciautogru.it" src="/images/portfolio/pascucci-autogru.png">
 		</div>
 	</div>
 
@@ -53,7 +53,7 @@ Template: full_page
 		<p>Software gestionale per magazzini di un negozio di elettricità.</p>
 		<div class="portofoliothumb">
 			<!-- image here -->
-			<img alt="" src="/theme/images/temp/folio1.jpg">
+			<img alt="Immagine pagina delle vendite sfizi di luce" src="/images/portfolio/sfizi-di-luce.png">
 		</div>
 	</div>
 
@@ -68,7 +68,7 @@ Template: full_page
 				</div>
 			</div>
 			<!-- image here -->
-			<img alt="" src="/theme/images/temp/folio1.jpg">
+			<img alt="Immagine homepage misterfantacalcio" src="/images/portfolio/misterfantacalcio.png">
 		</div>
 	</div>
 
@@ -83,7 +83,7 @@ Template: full_page
 				</div>
 			</div>
 			<!-- image here -->
-			<img alt="" src="/theme/images/temp/folio1.jpg">
+			<img alt="Immagine homepage sceridan" src="/images/portfolio/sceridan.jpg">
 		</div>
 	</div>
 
@@ -98,7 +98,7 @@ Template: full_page
 				</div>
 			</div>
 			<!-- image here -->
-			<img alt="" src="/theme/images/temp/folio1.jpg">
+			<img alt="Immagine homepage wool4wear" src="/images/portfolio/wool4wear.png">
 		</div>
 	</div>
 
