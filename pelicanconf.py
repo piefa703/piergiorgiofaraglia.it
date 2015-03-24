@@ -53,7 +53,7 @@ MENUITEMS = (
 #PAGE_SAVE_AS = '{slug}.html'
 #PAGE_PATHS = ['']
 
-THEME = "/Users/xm3ron/projects/piergiorgiofaraglia.it-theme/pjport"
+THEME = "/Users/xm3ron/projects/piergiorgiofaraglia.it/themes/pjport"
 
 ###########
 # PLUGINS #
