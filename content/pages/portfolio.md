@@ -78,13 +78,7 @@ Template: full_page
 		<h5>Sceridan</h5>
 		<p>Piattaforma social per la gestione di tutte le professionalità del mondo delle fiction.</p>
 		<div class="portofoliothumb">
-			<div class="portofoliothumboverlay">
-				<div class="inner">
-					<a href="http://sceridan.com" target="_blank" class="projectdetail">+ Vai al sito</a>
-				</div>
-			</div>
-			<!-- image here -->
-			<img alt="Immagine homepage sceridan" src="/images/portfolio/sceridan.jpg">
+			<img alt="Immagine homepage sceridan" src="/images/portfolio/sceridan.png">
 		</div>
 	</div>
 

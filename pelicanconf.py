@@ -79,3 +79,5 @@ LOAD_CONTENT_CACHE = False
 INDEX_SAVE_AS = 'blog_index.html'
 
 DEFAULT_DATE_FORMAT = ('- %d -<br/>%B<br/>%Y')
+
+STATIC_PATHS = ['images', 'bin', ]
