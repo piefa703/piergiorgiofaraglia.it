@@ -35,8 +35,10 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 # Social widget
 SOCIAL = (
     ('twitter', 'https://twitter.com/xm3ron'),
-    ('github', 'https://github.com/xm3ron'),
-    # facebook, flickr
+    ('linkedin', 'https://it.linkedin.com/in/piergiorgiofaraglia'),
+    ('facebook', 'https://www.facebook.com/p.faraglia'),
+    ('rss', ''),
+    #('github', 'https://github.com/xm3ron'),
 )
 
 DEFAULT_PAGINATION = 10
