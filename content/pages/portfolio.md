@@ -29,7 +29,7 @@ Template: full_page
 				</div>
 			</div>
 			<!-- image here -->
-			<img alt="Immagine homepage ludovicopratesi.it" src="/images/portfolio/ludovico-pratesi.png">
+			<img alt="Immagine homepage ludovicopratesi.it" src="{{ SITEURL }}/images/portfolio/ludovico-pratesi.png">
 		</div>
 	</div>
 
@@ -44,7 +44,7 @@ Template: full_page
 				</div>
 			</div>
 			<!-- image here -->
-			<img alt="Immagine homepage pascucciautogru.it" src="/images/portfolio/pascucci-autogru.png">
+			<img alt="Immagine homepage pascucciautogru.it" src="{{ SITEURL }}/images/portfolio/pascucci-autogru.png">
 		</div>
 	</div>
 
@@ -54,7 +54,7 @@ Template: full_page
 		<p>Software gestionale per magazzini di un negozio di elettricità.</p>
 		<div class="portofoliothumb">
 			<!-- image here -->
-			<img alt="Immagine pagina delle vendite sfizi di luce" src="/images/portfolio/sfizi-di-luce.png">
+			<img alt="Immagine pagina delle vendite sfizi di luce" src="{{ SITEURL }}/images/portfolio/sfizi-di-luce.png">
 		</div>
 	</div>
 
@@ -69,7 +69,7 @@ Template: full_page
 				</div>
 			</div>
 			<!-- image here -->
-			<img alt="Immagine homepage misterfantacalcio" src="/images/portfolio/misterfantacalcio.png">
+			<img alt="Immagine homepage misterfantacalcio" src="{{ SITEURL }}/images/portfolio/misterfantacalcio.png">
 		</div>
 	</div>
 
@@ -78,7 +78,7 @@ Template: full_page
 		<h5>Sceridan</h5>
 		<p>Piattaforma social per la gestione di tutte le professionalità del mondo delle fiction.</p>
 		<div class="portofoliothumb">
-			<img alt="Immagine homepage sceridan" src="/images/portfolio/sceridan.png">
+			<img alt="Immagine homepage sceridan" src="{{ SITEURL }}/images/portfolio/sceridan.png">
 		</div>
 	</div>
 
@@ -93,7 +93,7 @@ Template: full_page
 				</div>
 			</div>
 			<!-- image here -->
-			<img alt="Immagine homepage wool4wear" src="/images/portfolio/wool4wear.png">
+			<img alt="Immagine homepage wool4wear" src="{{ SITEURL }}/images/portfolio/wool4wear.png">
 		</div>
 	</div>
 
