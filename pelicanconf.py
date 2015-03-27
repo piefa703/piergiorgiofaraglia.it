@@ -9,9 +9,11 @@ import os
 #########
 BASEDIR = os.path.dirname(os.path.realpath(__file__)) 
 
+DOMAIN = 'piergiorgiofaraglia.local'
+
 AUTHOR = u'Piergiorgio Faraglia'
 SITENAME = u'Piergiorgio Faraglia'
-SITEURL = ''
+SITEURL = 'http://' + DOMAIN
 
 PATH = 'content'
 
@@ -26,6 +28,12 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# FEED RSS
+FEED_DOMAIN = 'http://feeds.' + DOMAIN
+FEED_ALL_RSS = 'all.rss.xml'
+CATEGORY_FEED_RSS = '%s.rss.xml'
+
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
@@ -37,7 +45,7 @@ SOCIAL = (
     ('twitter', 'https://twitter.com/xm3ron'),
     ('linkedin', 'https://it.linkedin.com/in/piergiorgiofaraglia'),
     ('facebook', 'https://www.facebook.com/p.faraglia'),
-    ('rss', ''),
+    ('rss', FEED_DOMAIN + '/' + FEED_ALL_RSS),
     #('github', 'https://github.com/xm3ron'),
 )
 
