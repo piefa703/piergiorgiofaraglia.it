@@ -15,7 +15,7 @@ Di seguito vi indico i passi da seguire per disabilitare l'accesso come utente r
 
 In primo luogo occorre aprire il file di configurazione di ssh:
 
-    # vi /etc/ssh/ssh_config
+    sudo vi /etc/ssh/ssh_config
 
 All'interno del file modificare la direttiva PermitRootLogin:
 
@@ -23,6 +23,6 @@ All'interno del file modificare la direttiva PermitRootLogin:
 
 Salvare il file e riavviare il server ssh:
 
-    # /etc/init.d/ssh restart
+    sudo /etc/init.d/ssh restart
 
 Da questo momento in poi non sarà più possibile accedere come root sul server.
