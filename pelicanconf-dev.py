@@ -16,6 +16,10 @@ AUTHOR = u'Piergiorgio Faraglia'
 SITENAME = u'Piergiorgio Faraglia'
 
 TIMEZONE = 'Europe/Rome'
+DEFAULT_LANG = u'it'
+JINJA_EXTENSIONS = ['jinja2.ext.i18n', ]
+I18N_GETTEXT_NEWSTYLE = True
+I18N_TEMPLATES_LANG = u'fr'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -89,11 +93,6 @@ DEFAULT_DATE_FORMAT = ('- %d -<br/>%B<br/>%Y')
 STATIC_PATHS = ['extra/CNAME', 'extra/robots.txt', 'bin', 'images', ]
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, 'extra/robots.txt': {'path': 'robots.txt'}, }
 
-#
-# pjport theme settings
-#
-
-
 # contacts
 CONTACT_EMAIL = 'pj80.forums@gmail.com'
 CONTACT_PHONE = '+39 328 72 77 333'
@@ -101,11 +100,6 @@ CONTACT_CITY = 'Rome'
 
 # GOOGLE ANALYTICS (set to  None if don't want it)
 GOOGLE_ANALYTICS = None
-
-DEFAULT_LANG = u'it'
-JINJA_EXTENSIONS = ['jinja2.ext.i18n', ]
-I18N_GETTEXT_NEWSTYLE = True
-I18N_TEMPLATES_LANG = u'fr'
 
 ARTICLE_URL = '{category}/{slug}.html'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'

@@ -9,14 +9,17 @@ import os
 BASEDIR = os.path.dirname(os.path.realpath(__file__))
 PATH = 'content'
 
-DOMAIN = 'technotes.piergiorgiofaraglia.it'
+DOMAIN = 'piergiorgiofaraglia.it'
 SITEURL = 'http://' + DOMAIN
 
 AUTHOR = u'Piergiorgio Faraglia'
-SITENAME = u'Technotes'
+SITENAME = u'Piergiorgio Faraglia'
 
 TIMEZONE = 'Europe/Rome'
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = u'it'
+JINJA_EXTENSIONS = ['jinja2.ext.i18n', ]
+I18N_GETTEXT_NEWSTYLE = True
+I18N_TEMPLATES_LANG = u'fr'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -43,9 +46,7 @@ DEFAULT_PAGINATION = 10
 # Menu
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
-MENUITEMS = (
-    ('Piergiorgio Faraglia', 'http://piergiorgiofaraglia.it'),
-)
+MENUITEMS = ()
 
 THEME = "/Users/xm3ron/projects/pelican-themes/pjport"
 
@@ -53,7 +54,7 @@ THEME = "/Users/xm3ron/projects/pelican-themes/pjport"
 # PLUGINS #
 ###########
 PLUGIN_PATHS = [os.path.join(BASEDIR, 'plugins')]
-PLUGINS = ['gravatar', 'sitemap', ]
+PLUGINS = ['gravatar', 'sitemap', 'i18n_subsites', ]
 
 #
 # GRAVATAR PLUGIN
@@ -77,18 +78,20 @@ SITEMAP = {
     }
 }
 
+#
+# I18N SUBSITES PLUGIN
+#
+# mapping: language_code -> settings_overrides_dict
+I18N_SUBSITES = {
+    'en': {
+        'SITENAME': 'Piergiorgio Faraglia',
+    }
+}
+
 DEFAULT_DATE_FORMAT = ('- %d -<br/>%B<br/>%Y')
 
-STATIC_PATHS = ['extra/CNAME', 'extra/robots.txt', ]
+STATIC_PATHS = ['extra/CNAME', 'extra/robots.txt', 'bin', 'images', ]
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'}, 'extra/robots.txt': {'path': 'robots.txt'}, }
-
-#
-# pjport theme settings
-#
-
-
-# about me
-ABOUT_ME = "I''m Piergiorgio Faraglia a computer engineer focused on software engineering and that is my tech blog. <br/>On this blog you can find my technology notes and you can navigate my projects and works"
 
 # contacts
 CONTACT_EMAIL = 'pj80.forums@gmail.com'
@@ -96,4 +99,15 @@ CONTACT_PHONE = '+39 328 72 77 333'
 CONTACT_CITY = 'Rome'
 
 # GOOGLE ANALYTICS (set to  None if don't want it)
-GOOGLE_ANALYTICS = 'UA-30758042-2'
+GOOGLE_ANALYTICS = 'UA-30758042-1'
+
+ARTICLE_URL = '{category}/{slug}.html'
+ARTICLE_SAVE_AS = '{category}/{slug}.html'
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+INDEX_SAVE_AS = 'techblog/index.html'
+
+PAGE_ORDER_BY = 'navbar-order'
+
+BLOG_RELURL = 'techblog'
+BLOG_NAME = 'TechBlog'
