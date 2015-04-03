@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Piergiorgio Faraglia</title><link>http://piergiorgiofaraglia.it/en/</link><description></description><atom:link href="http://piergiorgiofaraglia.it/linux.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 01 Apr 2015 15:00:00 +0200</lastBuildDate><item><title>How to disable ssh root access</title><link>http://piergiorgiofaraglia.it/en/linux/how-to-disable-ssh-root-access.html</link><description>&lt;p&gt;SSH libraries installed on linux distributions enabled by default root user access.
+Although on private or business intranet network such a feature could be sufficient in terms of security, on internet is better to disable ssh root access.&lt;/p&gt;
+&lt;p&gt;Following the steps below to disable it.&lt;/p&gt;
+&lt;p&gt;First of all, open ssh configuration file with root permissions:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo vi /etc/ssh/ssh_config
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Inside the file updates PermitRootLogin directive:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;PermitRootLogin no
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Save file and restart ssh server:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo /etc/init.d/ssh restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;From that moment you can't access your server as root user directly from outside the machine.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piergiorgio Faraglia</dc:creator><pubDate>Wed, 01 Apr 2015 15:00:00 +0200</pubDate><guid>tag:piergiorgiofaraglia.it,2015-04-01:en/linux/how-to-disable-ssh-root-access.html</guid><category>ssh</category><category>howto</category><category>networking</category><category>security</category></item><item><title>How to set static ip address on linux</title><link>http://piergiorgiofaraglia.it/en/linux/how-to-set-static-ip-address-linux.html</link><description>&lt;p&gt;Current linux distributions are configured to assign dynamic ip addresses when a machine is connected to net.&lt;/p&gt;
+&lt;p&gt;It's useful, overall on subnet configurations, to assign a static ip address
+to a specific machine. With the following instructions I explain how to assign
+that specific address.&lt;/p&gt;
+&lt;p&gt;Suppose you want to assign an ip address 192.168.1.10 to the interface eth0. The steps are:&lt;/p&gt;
+&lt;p&gt;Open interfaces configuration file with root privileges:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo vi /etc/network/interfaces
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Insert interface directives to the target interface:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;auto eth0
+iface eth0 inet static
+    address     192.68.1.10
+    network     192.168.1.0
+    netmask     255.255.255.0
+    broadcast   192.168.1.255
+    gateway     192.168.1.1
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Restart network interface with root privileges:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo ifconfig eth0 down
+sudo ifconfig eth0 up
+sudo /etc/init.d/networking stop
+sudo /etc/init.d/networking start
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piergiorgio Faraglia</dc:creator><pubDate>Tue, 31 Mar 2015 15:30:00 +0200</pubDate><guid>tag:piergiorgiofaraglia.it,2015-03-31:en/linux/how-to-set-static-ip-address-linux.html</guid><category>howto</category><category>networking</category></item></channel></rss>

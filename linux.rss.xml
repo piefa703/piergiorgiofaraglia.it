@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Piergiorgio Faraglia</title><link>http://piergiorgiofaraglia.it/</link><description></description><atom:link href="http://piergiorgiofaraglia.it/linux.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 01 Apr 2015 15:00:00 +0200</lastBuildDate><item><title>Come disabilitare accesso ssh come utente root</title><link>http://piergiorgiofaraglia.it/linux/come-disabilitare-accesso-root-ssh.html</link><description>&lt;p&gt;Le librerie SSH installate sulle distribuzioni linux abilitano per default l'accesso dell'utente root sui server ssh.
+Sebbene questa impostazione sia di poco conto sulle intranet private o aziendali, essa assume una notevole importanza in termini di sicurezza su server pubblici.
+I seguenti passi servono per disabilitare tale accesso.&lt;/p&gt;
+&lt;p&gt;Per prima cosa, apri il file di configurazione del server ssh con permessi di root&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo vi /etc/ssh/ssh_config
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Modifica la direttiva PermitRootLogin impostandola a no&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;PermitRootLogin no
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Salva il file e riavvia il server&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo /etc/init.d/ssh restart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Da questo momento in poi non potrai più accedere il server ssh come utente root.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piergiorgio Faraglia</dc:creator><pubDate>Wed, 01 Apr 2015 15:00:00 +0200</pubDate><guid>tag:piergiorgiofaraglia.it,2015-04-01:linux/come-disabilitare-accesso-root-ssh.html</guid><category>ssh</category><category>howto</category><category>reti</category><category>sicurezza</category></item></channel></rss>
