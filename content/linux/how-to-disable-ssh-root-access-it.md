@@ -1,5 +1,5 @@
-Title: How to disable ssh root access
-Slug: how-to-disable-ssh-root-access
+Title: Come disabilitare accesso ssh come utente root
+Slug: come-disabilitare-accesso-root-ssh
 Lang: it
 Date: 2015-04-01 15:00
 Modified: 2015-04-01 15:00
