@@ -11,6 +11,7 @@ PATH = 'content'
 
 DOMAIN = 'piergiorgiofaraglia.it'
 SITEURL = 'http://' + DOMAIN
+THEME_BASEURL = 'http://' + DOMAIN
 
 AUTHOR = u'Piergiorgio Faraglia'
 SITENAME = u'Piergiorgio Faraglia'
