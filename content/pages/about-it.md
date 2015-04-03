@@ -10,6 +10,7 @@ navbar-order: 01
 sono Piergiorgio Faraglia un **Ingegnere Informatico** di Roma
 specializzato in ingegneria del software.
 
+
 Ho maturato esperienze lavorative sia in Italia (principalmente su Roma) che
 all'estero (Svezia, Regno Unito). Nel corso degli anni mi sono imbattuto in una
 moltitudine di progetti software che mi hanno consentito di acquisire
