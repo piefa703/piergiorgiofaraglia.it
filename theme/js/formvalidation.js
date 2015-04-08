@@ -48,6 +48,8 @@ $(document).ready(function() {
 		
 		//show the loading sign
 		$('.loading').show();
+
+        console.log("eccomi");
 		
 		//start the ajax
 		$.ajax({
