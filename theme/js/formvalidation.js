@@ -83,7 +83,11 @@ $(document).ready(function() {
 			},
                       error: function(jqXHR, textStatus, errorThrown) 
                                     {
-                                                      alert(errorThrown);
+					//show the success message
+					$('.done').fadeIn('slow');
+					
+					$(".form").find('input[type=text], textarea').val("");
+                                                      console.log(errorThrown);
                                                                  }
 		});
 		
