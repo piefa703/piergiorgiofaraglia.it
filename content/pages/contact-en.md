@@ -24,7 +24,7 @@ navbar-order: 04
             <input type="text" name="email" class="smoothborder" placeholder="Your e-mail address *"/>
           </div>
           <label>Messaggio</label>
-          <textarea name="comment" class="smoothborder ctextarea" rows="14" placeholder="Message, feedback, comments *"></textarea>
+          <textarea name="message" class="smoothborder ctextarea" rows="14" placeholder="Message, feedback, comments *"></textarea>
           <input type="submit" id="submit" class="readmore" value="Send">
         </div>
       </form>
