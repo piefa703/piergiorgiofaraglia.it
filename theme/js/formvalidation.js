@@ -80,7 +80,11 @@ $(document).ready(function() {
 					
 				//if contact.php returned 0/false (send mail failed)
 				} else alert('Sorry, unexpected error. Please try again later.');				
-			}		
+			},
+                      error: function(jqXHR, textStatus, errorThrown) 
+                                    {
+                                                      alert(errorThrown);
+                                                                 }
 		});
 		
 		//cancel the submit button default behaviours
