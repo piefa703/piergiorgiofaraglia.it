@@ -7,7 +7,7 @@ $(document).ready(function() {
 		var name = $('input[name=name]');
 		var email = $('input[name=email]');
 		var regx = /^([a-z0-9_\-\.])+\@([a-z0-9_\-\.])+\.([a-z]{2,4})$/i;
-		var comment = $('textarea[name=comment]');
+		var comment = $('textarea[name=message]');
 		var returnError = false;
 		
 		//Simple validation to make sure user entered something
@@ -41,7 +41,7 @@ $(document).ready(function() {
 		
 		//organize the data
 		
-		var data = 'name=' + name.val() + '&email=' + email.val() + '&comment='  + encodeURIComponent(comment.val());
+		var data = 'name=' + name.val() + '&email=' + email.val() + '&message='  + encodeURIComponent(comment.val());
 
 		//disabled all the text fields
 		$('.text').attr('disabled','true');
