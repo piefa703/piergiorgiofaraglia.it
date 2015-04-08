@@ -14,7 +14,7 @@ navbar-order: 04
           Messaggio correttamente inviato! <a href="" class="close">x</a>
         </div>
       </div>
-      <form method="post" action="{{ APIURL }}/sendmail" id="contactform">
+      <form method="post" action="http://api.piergiorgiofaraglia.it/sendmail">
         <div class="form">
           <div class="six columns noleftmargin">
             <label>Nome</label>
