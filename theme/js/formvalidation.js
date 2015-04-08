@@ -69,6 +69,7 @@ $(document).ready(function() {
 			
 			//success
 			success: function (html) {				
+                console.log(html);
 				//if contact.php returned 1/true (send mail success)
 				if (html==1) {
 				
