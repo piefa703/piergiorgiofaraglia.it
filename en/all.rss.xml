@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Piergiorgio Faraglia</title><link>http://piergiorgiofaraglia.it/en/</link><description></description><atom:link href="http://piergiorgiofaraglia.it/all.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 01 Apr 2015 15:00:00 +0200</lastBuildDate><item><title>How to disable ssh root access</title><link>http://piergiorgiofaraglia.it/en/linux/how-to-disable-ssh-root-access.html</link><description>&lt;p&gt;SSH libraries installed on linux distributions enabled by default root user access.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Piergiorgio Faraglia</title><link>http://piergiorgiofaraglia.it/en/</link><description></description><atom:link href="http://piergiorgiofaraglia.it/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 17 Apr 2015 15:00:00 +0200</lastBuildDate><item><title>How to output query on csv</title><link>http://piergiorgiofaraglia.it/en/mysql/how-to-output-query-on-csv.html</link><description>&lt;p&gt;Sometimes happen to have to perform sql query, from command line, and show
+results directly on csv.&lt;/p&gt;
+&lt;p&gt;Such a file would be created both form bash command line and from mysql command
+line.&lt;/p&gt;
+&lt;h2&gt;Creazion from bash command line&lt;/h2&gt;
+&lt;p&gt;Execute following command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mysql -u YOUR_USERNAME -p YOUR_DB -B -e &amp;quot;YOUR_QUERY&amp;quot; | sed &amp;#39;s/\t/&amp;quot;,&amp;quot;/g;s/^/&amp;quot;/;s/$/&amp;quot;/;s/\n//g&amp;#39;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;sustitute placeholders with your username, db, and query to execute.&lt;/p&gt;
+&lt;h2&gt;Creation from mysql command line&lt;/h2&gt;
+&lt;p&gt;In order to create csv from mysql console, execute:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mysql -u YOUR_USER -p YOUR_DATABASE
+SELECT * INTO OUTFILE &amp;#39;YOUR_CSV_ABS_PATH&amp;#39; FIELDS TERMINATED BY &amp;#39;,&amp;#39; OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39; ESCAPED BY &amp;#39;\\&amp;#39; LINES TERMINATED BY &amp;#39;\n&amp;#39; FROM table WHERE 1
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piergiorgio Faraglia</dc:creator><pubDate>Fri, 17 Apr 2015 15:00:00 +0200</pubDate><guid>tag:piergiorgiofaraglia.it,2015-04-17:en/mysql/how-to-output-query-on-csv.html</guid><category>howto</category><category>query</category><category>csv</category><category>sql</category></item><item><title>How to disable ssh root access</title><link>http://piergiorgiofaraglia.it/en/linux/how-to-disable-ssh-root-access.html</link><description>&lt;p&gt;SSH libraries installed on linux distributions enabled by default root user access.
 Although on private or business intranet network such a feature could be sufficient in terms of security, on internet is better to disable ssh root access.&lt;/p&gt;
 &lt;p&gt;Following the steps below to disable it.&lt;/p&gt;
 &lt;p&gt;First of all, open ssh configuration file with root permissions:&lt;/p&gt;

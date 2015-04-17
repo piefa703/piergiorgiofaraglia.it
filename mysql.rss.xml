@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Piergiorgio Faraglia</title><link>http://piergiorgiofaraglia.it/</link><description></description><atom:link href="http://piergiorgiofaraglia.it/mysql.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 17 Apr 2015 15:00:00 +0200</lastBuildDate><item><title>Come scrivere il risultato di una query su file csv</title><link>http://piergiorgiofaraglia.it/mysql/come-scrivere-risultato-query-su-file-csv.html</link><description>&lt;p&gt;Sarà capitato a tutti di dover eseguire una query sql da riga di comando e
+dover mostrare il risultato della query su un file csv (che con estrema
+facilità può essere aperto con programmi quali LibreOffice).&lt;/p&gt;
+&lt;p&gt;Il file csv potrà essere creato da un terminal bash o dalla console di mysql.&lt;/p&gt;
+&lt;h2&gt;Creazione da terminale&lt;/h2&gt;
+&lt;p&gt;Eseguire il seguente comando:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mysql -u YOUR_USERNAME -p YOUR_DB -B -e &amp;quot;YOUR_QUERY&amp;quot; | sed &amp;#39;s/\t/&amp;quot;,&amp;quot;/g;s/^/&amp;quot;/;s/$/&amp;quot;/;s/\n//g&amp;#39;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;al posto dei placeholder mettere il proprio username, db, e query nell'ordine.&lt;/p&gt;
+&lt;h2&gt;Creazione da console mysql&lt;/h2&gt;
+&lt;p&gt;Per creare un file csv dalla console di mysql eseguire:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mysql -u YOUR_USER -p YOUR_DATABASE
+SELECT * INTO OUTFILE &amp;#39;YOUR_CSV_ABS_PATH&amp;#39; FIELDS TERMINATED BY &amp;#39;,&amp;#39; OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39; ESCAPED BY &amp;#39;\\&amp;#39; LINES TERMINATED BY &amp;#39;\n&amp;#39; FROM table WHERE 1
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piergiorgio Faraglia</dc:creator><pubDate>Fri, 17 Apr 2015 15:00:00 +0200</pubDate><guid>tag:piergiorgiofaraglia.it,2015-04-17:mysql/come-scrivere-risultato-query-su-file-csv.html</guid><category>howto</category><category>query</category><category>csv</category><category>sql</category></item></channel></rss>

@@ -7,12 +7,13 @@
 <html class="no-js" lang="it">
 <!--<![endif]-->
 <head>
-    <title>Piergiorgio Faraglia</title>
+      <title>Piergiorgio Faraglia</title>
     <meta charset="utf-8"/>
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width"/>
 
       <link href="http://piergiorgiofaraglia.it/all.rss.xml" type="application/rss+xml" rel="alternate" title="Piergiorgio Faraglia Full RSS Feed" />
+      <link href="http://piergiorgiofaraglia.it/mysql.rss.xml" type="application/rss+xml" rel="alternate" title="Piergiorgio Faraglia Categories RSS Feed" />
 
       <link rel="stylesheet" href="http://piergiorgiofaraglia.it/theme/css/style.css">
       <link rel="stylesheet" href="http://piergiorgiofaraglia.it/theme/css/skins/orange.css"><!-- skin color -->
@@ -25,6 +26,14 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+
+
+    <meta name="tags" content="howto" />
+    <meta name="tags" content="query" />
+    <meta name="tags" content="csv" />
+    <meta name="tags" content="sql" />
+
 </head>
 <body>
 <div class="row">
@@ -75,7 +84,9 @@
       <div class="twelve columns">
         <p class="left">
               <a href="http://piergiorgiofaraglia.it">TechBlog</a>
- / Archives
+
+  / <a href="http://piergiorgiofaraglia.it/category/mysql.html">Mysql</a>
+  / Come scrivere il risultato di una query su file csv
         </p>
         <p class="right"></p>
       </div>
@@ -86,24 +97,55 @@
   <div class="row">
     <div class="twelve columns noleftmargin">
       <div class="eight columns">
-  <div class="circledate">
-    <div class="textcircle">- 17 -<br/>April<br/>2015</div>
+  <div class="sectiontitle">
+    <h4>Come scrivere il risultato di una query su file csv</h4>
+    <br>
   </div>
-  <h4><a href="http://piergiorgiofaraglia.it/mysql/come-scrivere-risultato-query-su-file-csv.html" title="" style="color: inherit;">Come scrivere il risultato di una query su file csv</a>  <a class="comments" href="http://piergiorgiofaraglia.it/category/mysql.html">mysql</a> </h4>
-  <div class="dots blogdots"></div>
-  <p>Comandi per scrivere direttamente su csv il risultato di una query sql</p>
-  <a href="http://piergiorgiofaraglia.it/mysql/come-scrivere-risultato-query-su-file-csv.html" style="float:right;">Read more</a>
-  <br>
-  <div class="hr"></div>
-  <div class="circledate">
-    <div class="textcircle">- 01 -<br/>April<br/>2015</div>
+  <p>
+    <i>Published on <b>17 April 2015</b> in <a href="category/mysql.html">mysql</a></i>
+  </p>
+  <p>Sarà capitato a tutti di dover eseguire una query sql da riga di comando e
+dover mostrare il risultato della query su un file csv (che con estrema
+facilità può essere aperto con programmi quali LibreOffice).</p>
+<p>Il file csv potrà essere creato da un terminal bash o dalla console di mysql.</p>
+<h2>Creazione da terminale</h2>
+<p>Eseguire il seguente comando:</p>
+<div class="highlight"><pre>mysql -u YOUR_USERNAME -p YOUR_DB -B -e &quot;YOUR_QUERY&quot; | sed &#39;s/\t/&quot;,&quot;/g;s/^/&quot;/;s/$/&quot;/;s/\n//g&#39;
+</pre></div>
+
+
+<p>al posto dei placeholder mettere il proprio username, db, e query nell'ordine.</p>
+<h2>Creazione da console mysql</h2>
+<p>Per creare un file csv dalla console di mysql eseguire:</p>
+<div class="highlight"><pre>mysql -u YOUR_USER -p YOUR_DATABASE
+SELECT * INTO OUTFILE &#39;YOUR_CSV_ABS_PATH&#39; FIELDS TERMINATED BY &#39;,&#39; OPTIONALLY ENCLOSED BY &#39;&quot;&#39; ESCAPED BY &#39;\\&#39; LINES TERMINATED BY &#39;\n&#39; FROM table WHERE 1
+</pre></div>
+  <br/>
+  <div class="panel">
+    <div class="avatar">
+      <img src="http://www.gravatar.com/avatar/40220ea9bc684ab042d2f2517181ce6b" alt="">
+    </div>
+    <h5 class="left">AUTORE: Piergiorgio Faraglia </h5>
+    <div class="right">
+        <a href="https://twitter.com/xm3ron" target="_blank">
+          <div class="social twitter">
+          </div>
+        </a>
+        <a href="https://it.linkedin.com/in/piergiorgiofaraglia" target="_blank">
+          <div class="social linkedin">
+          </div>
+        </a>
+        <a href="https://www.facebook.com/p.faraglia" target="_blank">
+          <div class="social facebook">
+          </div>
+        </a>
+        <a href="http://piergiorgiofaraglia.it/all.rss.xml" target="_blank">
+          <div class="social rss">
+          </div>
+        </a>
+    </div>
+    <p class="clear authortext"></p>
   </div>
-  <h4><a href="http://piergiorgiofaraglia.it/linux/come-disabilitare-accesso-root-ssh.html" title="" style="color: inherit;">Come disabilitare accesso ssh come utente root</a>  <a class="comments" href="http://piergiorgiofaraglia.it/category/linux.html">linux</a> </h4>
-  <div class="dots blogdots"></div>
-  <p>Disabilitare accesso ssh come utente root per aumentare la sicurezza dei tuoi server.</p>
-  <a href="http://piergiorgiofaraglia.it/linux/come-disabilitare-accesso-root-ssh.html" style="float:right;">Read more</a>
-  <br>
-  <div class="hr"></div>
       </div>
       <div class="four columns">
             <h6 class="sidebartitle">CATEGORIE</h6>
