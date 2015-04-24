@@ -4,7 +4,7 @@ Lang: it
 Date: 2015-04-24 18:00
 Modified: 2015-04-24 18:00
 Category: linux
-Tags: nfs, howto, networking
+Tags: nfs, howto, reti
 Authors: Piergiorgio Faraglia
 Summary: Come configurare un server nfs per condividere cartelle in rete.
 
