@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Piergiorgio Faraglia</title><link>http://piergiorgiofaraglia.it/</link><description></description><atom:link href="http://piergiorgiofaraglia.it/linux.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 01 Apr 2015 15:00:00 +0200</lastBuildDate><item><title>Come disabilitare accesso ssh come utente root</title><link>http://piergiorgiofaraglia.it/linux/come-disabilitare-accesso-root-ssh.html</link><description>&lt;p&gt;Le librerie SSH installate sulle distribuzioni linux abilitano per default l'accesso dell'utente root sui server ssh.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Piergiorgio Faraglia</title><link>http://piergiorgiofaraglia.it/</link><description></description><atom:link href="http://piergiorgiofaraglia.it/linux.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 24 Apr 2015 18:00:00 +0200</lastBuildDate><item><title>Come configurare un server nfs</title><link>http://piergiorgiofaraglia.it/linux/come-configurare-server-nfs.html</link><description>&lt;p&gt;Per poter condividere una cartella mediante NFS è necessario installare sul 
+computer dal quale esportare la cartella i seguenti pacchettri:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# apt-get install nfs-common nfs-kernel-server
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Una volta installati i pacchetti inserire le direttive per esportare la cartella
+nel file /etc/exports&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# vi /etc/exports
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Nel file ogni riga corrisponde all'intenzione di voler condividere una cartella,
+ad esempio volendo condividere la cartella /media/pippo con il pc 192.168.1.23 la 
+riga da inserire nel file sarà:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;/media/pippo 192.168.1.23(rw,sync,no_subtree_check)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Ossia bisogna inserire il nome della cartella da condividere, l'indirizzo del 
+destinatario della condivisione e le impostazione che vogliamo assegnare alla
+condivisione.&lt;/p&gt;
+&lt;p&gt;Una volta inserite le direttive necessarie occorre riavviare il server affinchè 
+esse siano effettivamente attive&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# /etc/init.d/nfs-kernel-server restart
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piergiorgio Faraglia</dc:creator><pubDate>Fri, 24 Apr 2015 18:00:00 +0200</pubDate><guid>tag:piergiorgiofaraglia.it,2015-04-24:linux/come-configurare-server-nfs.html</guid><category>nfs</category><category>howto</category><category>networking</category></item><item><title>Come disabilitare accesso ssh come utente root</title><link>http://piergiorgiofaraglia.it/linux/come-disabilitare-accesso-root-ssh.html</link><description>&lt;p&gt;Le librerie SSH installate sulle distribuzioni linux abilitano per default l'accesso dell'utente root sui server ssh.
 Sebbene questa impostazione sia di poco conto sulle intranet private o aziendali, essa assume una notevole importanza in termini di sicurezza su server pubblici.
 I seguenti passi servono per disabilitare tale accesso.&lt;/p&gt;
 &lt;p&gt;Per prima cosa, apri il file di configurazione del server ssh con permessi di root&lt;/p&gt;

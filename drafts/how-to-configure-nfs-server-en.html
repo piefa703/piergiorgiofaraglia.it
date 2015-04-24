@@ -7,12 +7,13 @@
 <html class="no-js" lang="it">
 <!--<![endif]-->
 <head>
-    <title>Piergiorgio Faraglia</title>
+      <title>Piergiorgio Faraglia</title>
     <meta charset="utf-8"/>
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width"/>
 
       <link href="http://piergiorgiofaraglia.it/all.rss.xml" type="application/rss+xml" rel="alternate" title="Piergiorgio Faraglia Full RSS Feed" />
+      <link href="http://piergiorgiofaraglia.it/linux.rss.xml" type="application/rss+xml" rel="alternate" title="Piergiorgio Faraglia Categories RSS Feed" />
 
       <link rel="stylesheet" href="http://piergiorgiofaraglia.it/theme/css/style.css">
       <link rel="stylesheet" href="http://piergiorgiofaraglia.it/theme/css/skins/orange.css"><!-- skin color -->
@@ -25,6 +26,13 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+
+
+    <meta name="tags" content="nfs" />
+    <meta name="tags" content="howto" />
+    <meta name="tags" content="networking" />
+
 </head>
 <body>
 <div class="row">
@@ -75,7 +83,9 @@
       <div class="twelve columns">
         <p class="left">
               <a href="http://piergiorgiofaraglia.it">TechBlog</a>
- / Archives
+
+  / <a href="http://piergiorgiofaraglia.it/category/linux.html">Linux</a>
+  / How to configure nfs server
         </p>
         <p class="right"></p>
       </div>
@@ -86,33 +96,63 @@
   <div class="row">
     <div class="twelve columns noleftmargin">
       <div class="eight columns">
-  <div class="circledate">
-    <div class="textcircle">- 24 -<br/>April<br/>2015</div>
+  <div class="sectiontitle">
+    <h4>How to configure nfs server</h4>
+    <br>
   </div>
-  <h4><a href="http://piergiorgiofaraglia.it/linux/come-configurare-server-nfs.html" title="" style="color: inherit;">Come configurare un server nfs</a>  <a class="comments" href="http://piergiorgiofaraglia.it/category/linux.html">linux</a> </h4>
-  <div class="dots blogdots"></div>
-  <p>Come configurare un server nfs per condividere cartelle in rete.</p>
-  <a href="http://piergiorgiofaraglia.it/linux/come-configurare-server-nfs.html" style="float:right;">Read more</a>
-  <br>
-  <div class="hr"></div>
-  <div class="circledate">
-    <div class="textcircle">- 17 -<br/>April<br/>2015</div>
+  <p>
+    <i>Published on <b>24 April 2015</b> in <a href="category/linux.html">linux</a></i>
+  </p>
+  <p>In order to share folders among devices you can use NFS (Network File System).
+To install an nfs server on linux using apt executes following command:</p>
+<div class="highlight"><pre># apt-get install nfs-common nfs-kernel-server
+</pre></div>
+
+
+<p>After you install packages, insert directives to export folder on file
+/etc/exports:</p>
+<div class="highlight"><pre># vi /etc/exports
+</pre></div>
+
+
+<p>Inside such file each row is referred to a specific folder share. For instance, 
+we would like to share folder /media/pippo with 192.168.1.23 pc. To do such
+share, you write this line on exports file:</p>
+<div class="highlight"><pre>/media/pippo 192.168.1.23(rw,sync,no_subtree_check)
+</pre></div>
+
+
+<p>The line indicates the name of shared folder, the address of share receiver,
+and the settings that we would like to assign.</p>
+<p>Once you insert the directives you should restart your server:</p>
+<div class="highlight"><pre># /etc/init.d/nfs-kernel-server restart
+</pre></div>
+  <br/>
+  <div class="panel">
+    <div class="avatar">
+      <img src="http://www.gravatar.com/avatar/40220ea9bc684ab042d2f2517181ce6b" alt="">
+    </div>
+    <h5 class="left">AUTORE: Piergiorgio Faraglia </h5>
+    <div class="right">
+        <a href="https://twitter.com/xm3ron" target="_blank">
+          <div class="social twitter">
+          </div>
+        </a>
+        <a href="https://it.linkedin.com/in/piergiorgiofaraglia" target="_blank">
+          <div class="social linkedin">
+          </div>
+        </a>
+        <a href="https://www.facebook.com/p.faraglia" target="_blank">
+          <div class="social facebook">
+          </div>
+        </a>
+        <a href="http://piergiorgiofaraglia.it/all.rss.xml" target="_blank">
+          <div class="social rss">
+          </div>
+        </a>
+    </div>
+    <p class="clear authortext"></p>
   </div>
-  <h4><a href="http://piergiorgiofaraglia.it/mysql/come-scrivere-risultato-query-su-file-csv.html" title="" style="color: inherit;">Come scrivere il risultato di una query su file csv</a>  <a class="comments" href="http://piergiorgiofaraglia.it/category/mysql.html">mysql</a> </h4>
-  <div class="dots blogdots"></div>
-  <p>Comandi per scrivere direttamente su csv il risultato di una query sql</p>
-  <a href="http://piergiorgiofaraglia.it/mysql/come-scrivere-risultato-query-su-file-csv.html" style="float:right;">Read more</a>
-  <br>
-  <div class="hr"></div>
-  <div class="circledate">
-    <div class="textcircle">- 01 -<br/>April<br/>2015</div>
-  </div>
-  <h4><a href="http://piergiorgiofaraglia.it/linux/come-disabilitare-accesso-root-ssh.html" title="" style="color: inherit;">Come disabilitare accesso ssh come utente root</a>  <a class="comments" href="http://piergiorgiofaraglia.it/category/linux.html">linux</a> </h4>
-  <div class="dots blogdots"></div>
-  <p>Disabilitare accesso ssh come utente root per aumentare la sicurezza dei tuoi server.</p>
-  <a href="http://piergiorgiofaraglia.it/linux/come-disabilitare-accesso-root-ssh.html" style="float:right;">Read more</a>
-  <br>
-  <div class="hr"></div>
       </div>
       <div class="four columns">
             <h6 class="sidebartitle">CATEGORIE</h6>
@@ -132,6 +172,15 @@
               <a href="http://piergiorgiofaraglia.it/tag/query.html" class="tags">query</a>
             <br class="clear"/>
 
+              <h6 class="sidebartitle">POST CORRELATI</h6>
+            <a href="http://piergiorgiofaraglia.it/linux/come-configurare-server-nfs.html" title="Come configurare un server nfs" style="color: inherit;">
+              <strong>Come configurare un server nfs</strong>
+              <p>Come configurare un server nfs per condividere cartelle in rete.</p>
+            </a>
+            <a href="http://piergiorgiofaraglia.it/linux/come-disabilitare-accesso-root-ssh.html" title="Come disabilitare accesso ssh come utente root" style="color: inherit;">
+              <strong>Come disabilitare accesso ssh come utente root</strong>
+              <p>Disabilitare accesso ssh come utente root per aumentare la sicurezza dei tuoi server.</p>
+            </a>
       </div>
     </div>
   </div>

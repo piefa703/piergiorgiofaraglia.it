@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://piergiorgiofaraglia.it/en/</loc>
-<lastmod>2015-04-17T15:14:17-00:00</lastmod>
+<lastmod>2015-04-24T17:48:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://piergiorgiofaraglia.it/en/archives.html</loc>
-<lastmod>2015-04-17T15:14:17-00:00</lastmod>
+<lastmod>2015-04-24T17:48:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://piergiorgiofaraglia.it/en/tags.html</loc>
-<lastmod>2015-04-17T15:14:17-00:00</lastmod>
+<lastmod>2015-04-24T17:48:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://piergiorgiofaraglia.it/en/categories.html</loc>
-<lastmod>2015-04-17T15:14:17-00:00</lastmod>
+<lastmod>2015-04-24T17:48:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -60,6 +60,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://piergiorgiofaraglia.it/en/linux/how-to-configure-nfs-server.html</loc>
+<lastmod>2015-04-24T18:00:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://piergiorgiofaraglia.it/en/mysql/how-to-output-query-on-csv.html</loc>
 <lastmod>2015-04-17T15:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
@@ -82,7 +89,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://piergiorgiofaraglia.it/en/category/linux.html</loc>
-<lastmod>2015-04-01T15:00:00+00:50</lastmod>
+<lastmod>2015-04-24T18:00:00+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -96,14 +103,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://piergiorgiofaraglia.it/en/tag/networking.html</loc>
-<lastmod>2015-04-01T15:00:00+00:50</lastmod>
+<lastmod>2015-04-24T18:00:00+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://piergiorgiofaraglia.it/en/tag/howto.html</loc>
-<lastmod>2015-04-17T15:00:00+00:50</lastmod>
+<lastmod>2015-04-24T18:00:00+00:50</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://piergiorgiofaraglia.it/en/tag/nfs.html</loc>
+<lastmod>2015-04-24T18:00:00+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -145,7 +159,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://piergiorgiofaraglia.it/en/author/piergiorgio-faraglia.html</loc>
-<lastmod>2015-04-17T15:00:00+00:50</lastmod>
+<lastmod>2015-04-24T18:00:00+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Piergiorgio Faraglia</title><link>http://piergiorgiofaraglia.it/en/</link><description></description><atom:link href="http://piergiorgiofaraglia.it/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 17 Apr 2015 15:00:00 +0200</lastBuildDate><item><title>How to output query on csv</title><link>http://piergiorgiofaraglia.it/en/mysql/how-to-output-query-on-csv.html</link><description>&lt;p&gt;Sometimes happen to have to perform sql query, from command line, and show
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Piergiorgio Faraglia</title><link>http://piergiorgiofaraglia.it/en/</link><description></description><atom:link href="http://piergiorgiofaraglia.it/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 24 Apr 2015 18:00:00 +0200</lastBuildDate><item><title>How to configure nfs server</title><link>http://piergiorgiofaraglia.it/en/linux/how-to-configure-nfs-server.html</link><description>&lt;p&gt;In order to share folders among devices you can use NFS (Network File System).
+To install an nfs server on linux using apt executes following command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# apt-get install nfs-common nfs-kernel-server
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After you install packages, insert directives to export folder on file
+/etc/exports:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# vi /etc/exports
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Inside such file each row is referred to a specific folder share. For instance, 
+we would like to share folder /media/pippo with 192.168.1.23 pc. To do such
+share, you write this line on exports file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;/media/pippo 192.168.1.23(rw,sync,no_subtree_check)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The line indicates the name of shared folder, the address of share receiver,
+and the settings that we would like to assign.&lt;/p&gt;
+&lt;p&gt;Once you insert the directives you should restart your server:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# /etc/init.d/nfs-kernel-server restart
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Piergiorgio Faraglia</dc:creator><pubDate>Fri, 24 Apr 2015 18:00:00 +0200</pubDate><guid>tag:piergiorgiofaraglia.it,2015-04-24:en/linux/how-to-configure-nfs-server.html</guid><category>nfs</category><category>howto</category><category>networking</category></item><item><title>How to output query on csv</title><link>http://piergiorgiofaraglia.it/en/mysql/how-to-output-query-on-csv.html</link><description>&lt;p&gt;Sometimes happen to have to perform sql query, from command line, and show
 results directly on csv.&lt;/p&gt;
 &lt;p&gt;Such a file would be created both form bash command line and from mysql command
 line.&lt;/p&gt;
