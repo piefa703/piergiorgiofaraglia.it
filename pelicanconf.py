@@ -101,7 +101,7 @@ CONTACT_PHONE = '+39 328 72 77 333'
 CONTACT_CITY = 'Rome'
 
 # GOOGLE ANALYTICS (set to  None if don't want it)
-GOOGLE_ANALYTICS = 'UA-30758042-1'
+GOOGLE_ANALYTICS = 'UA-30758042-3'
 
 ARTICLE_URL = '{category}/{slug}.html'
 ARTICLE_SAVE_AS = '{category}/{slug}.html'
