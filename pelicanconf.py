@@ -50,7 +50,7 @@ DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = ()
 
-THEME = "/Users/xm3ron/projects/pelican-themes/pjport"
+THEME = "/home/xm3ron/projects/pjport"
 
 ###########
 # PLUGINS #

@@ -1,5 +1,5 @@
 Title: Portfolio
-Date: 2015-04-02
+Date: 2018-04-18
 Lang: it
 Template: page-no-sidebar
 navbar-order: 03
@@ -76,11 +76,17 @@ navbar-order: 03
     <h5>Sceridan</h5>
     <p>Piattaforma social per la gestione di tutte le professionalità del mondo delle fiction.</p>
     <div class="portofoliothumb">
+      <div class="portofoliothumboverlay">
+        <div class="inner">
+          <a href="http://sceridan.com" target="_blank" class="projectdetail">+ Vai al sito</a>
+        </div>
+      </div>
       <img alt="Immagine homepage sceridan" src="http://placehold.it/460x250&text=coming+soon">
     </div>
   </div>
 
   <!-- Progetto: Wool4wear -->
+<!--
   <div class="six columns category ecommerce">
     <h5>Wool4wear</h5>
     <p>E-commerce per la vendita di prodotti di lana, cotone, pannolenci realizzati a mano.</p>
@@ -94,4 +100,5 @@ navbar-order: 03
       <img alt="Immagine homepage wool4wear" src="/images/portfolio/wool4wear.png">
     </div>
   </div>
+-->
 </div>
